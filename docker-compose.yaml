@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    image: baidang201/mail-api:latest
+    ports:
+      - "8888:80"
+    volumes:
+      - "./app/:/opt/app/"
+      - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
