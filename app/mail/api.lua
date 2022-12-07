@@ -20,7 +20,7 @@ function Split(s, delimiter)
 end
 
 local mail = require "resty.mail"
-local imap4 = require 'resty.imap4'
+-- local imap4 = require 'resty.imap4'
 local pop3 = require "pop3"
 local shell = require("resty.shell")
 

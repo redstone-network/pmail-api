@@ -14,3 +14,9 @@ luarocks upload pmail-api-dev-1.rockspec  --api-key=${apikey}
 docker build -t baidang201/mail-api .
 
 docker compose up -d
+
+curl --location --request POST '127.0.0.1:8888/api/test' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "example": "hehe"
+}'
